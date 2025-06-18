@@ -12,6 +12,7 @@ if not os.path.exists(model_path):
 print(f"Loading model from {model_path}")
 print(f"File size: {os.path.getsize(model_path)} bytes")
 
+
 # Load the model with error handling for custom objects
 try:
     model = tf.keras.models.load_model(model_path, compile=False)
